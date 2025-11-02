@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "dev": "react-scripts start",
     "start": "serve -s build -l $PORT",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm install && npm run build",
     "test": "echo \"Skipping tests\"",
     "eject": "react-scripts eject"
   },
