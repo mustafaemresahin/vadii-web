@@ -23,7 +23,7 @@ export default function VadiiWebsite() {
     { name: "Nutritional Supplements", icon: Zap }
   ];
 
-  const brands = ["BD", "Cardinal Health", "McKesson", "Exel", "Diathor"];
+  const brands = ["BD", "Cardinal Health", "McKesson", "Exel"];
 
   const features = [
     { icon: Award, title: "Since 2017", description: "Years of trusted service in medical supply", color: "from-blue-500 to-cyan-500" },
@@ -115,9 +115,18 @@ export default function VadiiWebsite() {
             <div className="flex items-center group">
               <div className="flex-shrink-0">
                 <div className="flex items-center space-x-3">
-                  <div className="medical-cross transform group-hover:rotate-90 transition-transform duration-500"></div>
+                  <img
+                    src="/logo.png"
+                    alt="Vadii logo"
+                    className="w-14 h-14 object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
                   <div>
-                    <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Vadii</h1>
+                    <h1
+                      className="text-3xl font-bold bg-clip-text text-transparent"
+                      style={{ backgroundImage: "linear-gradient(to right, #12869c, #51d6e2)" }}
+                    >
+                      Vadii
+                    </h1>
                     <p className="text-xs text-gray-600">Medical Supply Solutions</p>
                   </div>
                 </div>
@@ -380,7 +389,11 @@ export default function VadiiWebsite() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="medical-cross transform scale-75 brightness-200"></div>
+                <img
+                  src="/logo.png"
+                  alt="Vadii logo"
+                  className="w-12 h-12 object-contain"
+                />
                 <h3 className="text-2xl font-bold">Vadii</h3>
               </div>
               <p className="text-blue-100">Medical Supply Solutions since 2017</p>
